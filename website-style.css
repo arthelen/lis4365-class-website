@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	height: 100%;
+  	width: 100%;
+  	text-align: center;
+	font-family: garamond;
+	background-color: #EDD8E1;
+	color: #323232;
+	accent-color: #C4A1A1;
+}
+
+p {
+	font-size: 22px;
+	margin: 20px 70px 20px 70px;
+}
+
+hr {
+	border: 5px solid #C4A1A1;
+	border-radius: 5px;
+	width: 59%;
+}
+
+h1 {
+	text-shadow: 1px 1px 5px #C4A1A1;
+}
+
+h2 {
+	text-shadow: 1px 1px 5px white;
+}
+
+table {
+	font-size: 22px;
+}
+
+td {
+	padding: 20px;
+}
+
+button {
+	font-family: garamond;
+  	background-color: #323232;
+  	color: white;
+  	border-radius: 10px;
+  	font-size: 20px;
+	font-weight: bold;
+	padding: 8px 17px;
+	margin: 0px 10px 10px 0px;
+	transition-duration: .5s;
+	border: none;
+}
+
+button:hover {
+	background-color: #C4A1A1;
+	border-color: #C4A1A1;
+}
+
+input {
+	border: 3px solid #C4A1A1;
+	border-radius: 12px;
+	text-align: center;
+	font-family: garamond;
+	font-size: 19px;
+	padding: 5px;
+	color: #C4A1A1;
+	transition-duration: .1s;
+}
+
+input:hover {
+	transform: scale(1.1);
+	transition: .1s ease-in-out;
+	border: 3px solid #323232;
+}
+
+input:focus {
+	border: 3px solid;
+	transform: scale(1.1);
+}
+
+input:-webkit-autofill {
+	font-family: garamond;
+	font-size: 19px;
+    -webkit-text-fill-color: #C4A1A1;
+	/* changes autofill background from blue to white */
+    -webkit-box-shadow: 0 0 0 50px white inset;
+}
+
+input:autofill {
+	font-family: garamond;
+	font-size: 19px;
+    -webkit-text-fill-color: #C4A1A1;
+	/* changes autofill background from blue to white */
+    -webkit-box-shadow: 0 0 0 50px white inset;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px #C4A1A1;
+	border-radius: 10px;
+	background-color: #EDD8E1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #C4A1A1;
+	transition-duration: .3s;
+}
+
+.mod3-table img:hover {
+	transform: scale(1.1);
+	transition: .1s ease-in-out;
+}
+
+#demo {
+	font-size: 20px;
+}
+
+.mod4-img img{
+	border: 5px solid #C4A1A1;
+}
+
+#comments {
+	width: 290px;
+}
+
+::placeholder {
+	font-family: garamond;
+	font-size: 18px;
+	color: #BFBFBD;
+}
+
+#radio input:focus {
+	color: #C4A1A1;
+	border: 5px solid #C4A1A1;
+}
+
+label {
+	font-size: 21px;
+}
+
+.card {
+	border: 3px solid #C4A1A1;
+	border-radius: 5px;
+	box-shadow: 10px 10px 25px #C4A1A1;
+	background-color: white;
+	width: 360px;
+	padding: 10px 25px 10px 25px;
+	text-align: left;
+	transition: .2s;
+  	display: inline-block;
+	margin: 25px;
+ 	vertical-align: middle;
+}
+
+.card:hover {
+	transform: scale(1.03);
+}
+
+.blog-header {
+	background-color: #EDD8E1;
+	padding: 3px;
+	border-radius: 7px;
+}
+
+.blog-text {
+	text-align: left;
+}
+
+.blog-time {
+	font-family: 'Inconsolata', monospace;
+}
+
+.food-icon {
+	transition: .1s;
+}
+
+.food-icon:hover {
+	transform: scale(1.2);
+}
+
+textarea {
+	border: 3px solid #C4A1A1;
+	border-radius: 12px;
+	text-align: center;
+	font-family: garamond;
+	font-size: 19px;
+	padding: 5px;
+	color: #C4A1A1;
+	transition-duration: .1s;
+}
+
+textarea:hover {
+	transform: scale(1.1);
+	transition: .1s ease-in-out;
+	border: 3px solid #323232;
+}
+
+textarea:focus {
+	border: 3px solid;
+	transform: scale(1.1);
+}

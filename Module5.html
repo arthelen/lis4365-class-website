@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<link rel="stylesheet" href="website-style.css" />
+	
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<script>
+		function validateForm()
+		{
+			var fn = document.forms["myForm"]["firstname"].value;
+			var ln = document.forms["myForm"]["lastname"].value;
+			var em = document.forms["myForm"]["email"].value;
+			var emtest = /^[0-9a-zA-Z]+@[0-9a-zA-Z]+[\.]{1}[0-9a-zA-Z]+[\.]?[0-9a-zA-Z]+$/;
+			var black = document.getElementById("black");
+			var blue = document.getElementById("blue");
+			var brown = document.getElementById("brown");
+			var gray = document.getElementById("gray");
+			var green = document.getElementById("green");
+			var orange = document.getElementById("orange");
+			var pink = document.getElementById("pink");
+			var purple = document.getElementById("purple");
+			var red = document.getElementById("red");
+			var white = document.getElementById("white");
+			var yellow = document.getElementById("yellow");
+			var othercolor = document.getElementById("othercolor");
+			if (fn == "" || fn == null)
+			{
+				alert("first name must be filled out!");
+				return false;
+			}
+			if (ln == "" || ln == null)
+			{
+				alert("last name must be filled out!");
+				return false;
+			}
+			if (emtest.test(em) == false)
+			{
+				alert("please enter a valid email address!");
+				return false;				
+			}
+			if (black.checked)
+			{
+				alert("nice choice, black, like coffee (kind of)! ˗ˏˋ☕ˎˊ˗");
+			}
+			if (blue.checked)
+			{
+				alert("nice choice, blue, like fish! ˗ˏˋ🐟ˎˊ˗");
+			}
+			if (brown.checked)
+			{
+				alert("nice choice, brown, like a potato! ˗ˏˋ🥔ˎˊ˗");
+			}
+			if (gray.checked)
+			{
+				alert("nice choice, gray, like inside a coconut (kind of)! ˗ˏˋ🥥ˎˊ˗");
+			}
+			if (green.checked)
+			{
+				alert("nice choice, green, like an avocado! ˗ˏˋ🥑ˎˊ˗");
+			}
+			if (orange.checked)
+			{
+				alert("nice choice, orange, like an orange! ˗ˏˋ🍊ˎˊ˗");
+			}
+			if (pink.checked)
+			{
+				alert("nice choice, pink, like a lollipop! ˗ˏˋ🍭ˎˊ˗");
+			}
+			if (purple.checked)
+			{
+				alert("nice choice, purple, like grapes! ˗ˏˋ🍇ˎˊ˗");
+			}
+			if (red.checked)
+			{
+				alert("nice choice, red, like a cherry! ˗ˏˋ🍒ˎˊ˗");
+			}
+			if (white.checked)
+			{
+				alert("nice choice, white, like ice cream! ˗ˏˋ🍦ˎˊ˗");
+			}
+			if (yellow.checked)
+			{
+				alert("nice choice, yellow, like a lemon! ˗ˏˋ🍋ˎˊ˗");
+			}
+			if (othercolor.checked)
+			{
+				alert("nice choice, but i wonder what color it is! 《◇☉_☉◇》");
+			}
+			if (black.checked == false && blue.checked == false && brown.checked == false && gray.checked == false && green.checked == false && orange.checked == false && pink.checked == false && purple.checked == false && red.checked == false && white.checked == false && yellow.checked == false && othercolor.checked == false)
+			{
+				alert("please choose your favorite color!");
+				return false;
+			}
+		}
+	</script>
+</head>
+
+  	<title>module 5</title>
+
+<body>
+
+  	<br>
+  	<hr>
+  	<br>
+
+  	<h1>♡¸.• module 5 •.¸♡ </h1>
+  	<h4>allison thelen</h4>
+
+  	<br>
+	<div class="dropdown">
+	<button>ㅤ<i class="bi bi-house-fill">ㅤ</i></button>
+	  <div class="dropdown-content">
+		  <a href="website-index.html">home</a>
+	  </div>
+	</div>
+	<br>
+	<br>
+	
+	<img src="wcp.png" style="height: 105px; margin-bottom: -45px">
+	<br>
+	<img src="q1.png" style="height: 77px; margin-bottom: -25px">
+	
+	<h3><i>fields with an asterisk (*) are required</i></h3>
+
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+		<label for="firstname">* first name:</label><br>
+		<input type="text" id="firstname" name="firstname" placeholder="john"><br><br>
+		<label for="lastname">* last name:</label><br>
+		<input type="text" id="lastname" name="lastname" placeholder="doe"><br><br>
+		<label for="email">* email:</label><br>
+		<input type="text" id="email" name="email" placeholder="johndoe@mail.com"><br><br>	
+		<div id="radio">
+			<label for="color">* quick question, what is your favorite color?</label><br>
+			<input type="radio" id="black" name="color" value="black">
+			<label for="color"> black</label><br>
+			<input type="radio" id="blue" name="color" value="blue">
+			<label for="color"> blue</label><br>
+			<input type="radio" id="brown" name="color" value="brown">
+			<label for="color"> brown</label><br>
+			<input type="radio" id="gray" name="color" value="gray">
+			<label for="color"> gray</label><br>
+			<input type="radio" id="green" name="color" value="green">
+			<label for="color"> green</label><br>
+			<input type="radio" id="orange" name="color" value="orange">
+			<label for="color"> orange</label><br>
+			<input type="radio" id="pink" name="color" value="pink">
+			<label for="color"> pink</label><br>
+			<input type="radio" id="purple" name="color" value="purple">
+			<label for="color"> purple</label><br>
+			<input type="radio" id="red" name="color" value="red">
+			<label for="color"> red</label><br>		
+			<input type="radio" id="white" name="color" value="white">
+			<label for="color"> white</label><br>
+			<input type="radio" id="yellow" name="color" value="yellow">
+			<label for="color"> yellow</label><br>
+			<input type="radio" id="othercolor" name="color" value="othercolor">
+			<label for="color"> other</label><br><br>
+		</div>
+		<label for="comments">comments:</label><br>
+		<input type="text" id="comments" name="comments" placeholder="feel free to leave anything here :)" class="scroll"><br><br><br>
+		<button type="submit" value="Submit">submit</button>
+	</form>
+
+	<p>thank you for filling out the form!</p>
+	<br>
+	
+	<hr style="width: 250px">
+	
+	<img src="wd.png" style="height: 105px; margin-bottom: -45px">
+	<br>
+	<img src="q1.png" style="height: 77px; margin-bottom: -25px">
+	<p>here is a wireframe of a potential revamp or just different layout of this current site:</p>
+	<br>
+	<img src="wireframe.png" height="500px">
+	
+
+	<br>
+	<br>
+	<br>
+	
+	<center>
+	<table>
+		<tr>
+			<th><center><img src="x-mark.png" style="height: 50px"></th><th><img src="check-mark.png" style="height: 50px"></center></th>
+		</tr>
+		<tr>
+			<td><center>When I created the color radio buttons and overall question<br> I had slight trouble figuring out how to link the HTML<br> variables to the JavaScript variables and overall validation function(s).<br> Furthermore, I wanted to change the color of the radio<br> options from the standard blue they usually are, which I had<br> some difficulty with as well, but somewhat figured it out, though<br> they are not entirely what I want them to be.</center></td>
+			<td><center>The wireframe creation was the easiest part of this whole<br> assignment as I have done it many times before. Other aspects<br> I did not have trouble with were doing placeholders for the input<br> fields for the form and also most of the formatting of the form as<br> well.</center></td>
+		</tr>
+	</table>
+	</center>
+
+
+	<br>
+	<br>
+	<p>˙ᵕ˙</p>
+	<br>
+	<hr>
+	<br>
+
+</body>
+</html>

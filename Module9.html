@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<link rel="stylesheet" href="website-style.css" />
+	
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<script>
+		function validateForm()
+		{
+			var fn = document.forms["myForm"]["fname"].value;
+			var ln = document.forms["myForm"]["lname"].value;
+			var a = document.forms["myForm"]["age"].value;
+			if (fn == "" || fn == null)
+			{
+				alert("first name must be filled out!");
+				return false;
+			}
+			if (ln == "" || ln == null)
+			{
+				alert("last name must be filled out!");
+				return false;
+			}
+			if (a == "" || a == null)
+			{
+				alert("age must be filled out!");
+				return false;
+			}
+		}
+	</script>
+</head>
+
+  	<title>module 9</title>
+
+<body>
+
+  	<br>
+  	<hr>
+  	<br>
+
+  	<h1>♡¸.• module 9 •.¸♡ </h1>
+  	<h4>allison thelen</h4>
+
+  	<br>
+	<div class="dropdown">
+	<button>ㅤ<i class="bi bi-house-fill">ㅤ</i></button>
+	  <div class="dropdown-content">
+		  <a href="website-index.html">home</a>
+	  </div>
+	</div>
+	<br>
+	<br>
+	<br>
+	
+	<h3><i>fields with an asterisk (*) are required</i></h3>
+
+	<form name="myForm" action="ProcessForm9.php" onsubmit="return validateForm()" method="post">
+		<label for="fname">* first name:</label><br>
+		<input type="text" id="fname" name="fname" placeholder="john"><br><br>
+		<label for="lname">* last name:</label><br>
+		<input type="text" id="lname" name="lname" placeholder="doe"><br><br>
+		<label for="age">* age:</label><br>
+		<input type="text" id="age" name="age" placeholder="25"><br><br>
+		<label for="message">message:</label><br>
+		<textarea type="text" id="message" name="message" placeholder="feel free to leave anything here :)" class="scroll"></textarea><br><br><br>
+		<button type="submit" onclick="formSubmit()" value="Submit">submit</button>
+	</form>
+
+	<p>thank you for filling out the form!</p>
+	<br>
+	<br>
+	
+	<p>as for the MySQL table setup, here is a screenshot of my table results after I completed the steps provided (I ended up adding an extra input, "Message"):</p>
+	<img src="module 9 assignment.png" style="height:70%">
+	
+	<br>
+	<br>
+	<br>
+	
+	<hr style="width: 250px">
+
+
+	<br>
+	<br>
+	<p>˙ᵕ˙</p>
+	<br>
+	<hr>
+	<br>
+
+</body>
+</html>

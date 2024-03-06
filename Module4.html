@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>module 4</title>
+	<link rel="stylesheet" href="website-style.css" />
+
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+	<br>
+	<hr>
+	<br>
+
+	<h1>♡¸.• module 4 •.¸♡ </h1>
+	<h4>allison thelen</h4>
+
+	<br>
+	<div class="dropdown">
+	  <button>ㅤ<i class="bi bi-house-fill">ㅤ</i></button>
+	  <div class="dropdown-content">
+		  <a href="website-index.html">home</a>
+	  </div>
+	</div>
+	
+	<br>
+	<br>
+	
+	<img src="q1.png" style="height: 105px">
+	
+	<h2 id="name" id="similarity">Display the result here.</h2>
+	<script>
+		var name = prompt("what is your first name? (try escaping, leaving the field empty, and so on for different results!)");
+		// makes inputted name lowercase
+		name = name.toLowerCase();
+		var similarity;
+		if (name == 'allison')
+		{
+	//    	alert('༼ つ ⚈⚬⚈ ༽つ wow! that is so cool, we have the same name!');
+			similarity = (", we have the same name!<br><br>༼ つ ⚈⚬⚈ ༽つ");
+		}
+		else if (name.length == 0)
+		{
+			similarity = ("... you left the name field empty<br><br>(๑⚈ _⚈๑)");
+		}
+		else if (name == 'null')
+		{
+			similarity = (", that is not a valid name (in this instance)<br><br>╮(◍ ´⚈__⚈`)╭");			
+		}
+		else
+		{
+	//    	alert('༼  ⚈╭╮⚈ ༽ darn! we do not have the same name, but the name ' + name.toLowerCase() + ' is cool too!');
+			similarity = (", we do not have the same name!<br><br>༼ ⚈╭╮⚈ ༽");
+		}
+
+		document.getElementById("name").innerHTML = ("welcome " + name + similarity);
+	</script>
+	
+	<br>
+
+	<center>
+		<table>
+			<tr>
+				<th><center><img src="x-mark.png" style="height: 50px"></th><th><img src="check-mark.png" style="height: 50px"></center></th>
+			</tr>
+			<tr>
+				<td><center>Initially figuring out what I wanted my condition<br> to be and what it did was difficult. Then, when<br> I chose to do the name if else condition, I was having<br> trouble with making it not case sensitive when the user<br> inputted the same name as me (I wanted it so if they typed<br> "aLLisON" or any kind of case it would still register as<br> having the same name). I realized after some tinkering<br> the simple mistake that was causing it to not register and<br> was able to figure it out!</center></td>
+				<td><center>Making the initial if condition was simple,<br> I just struggled with case sensitivity. Furthermore,<br> creating the variables and text prompts that would<br> result from certain inputs was pretty<br> straightforward and easy for me as well.</center></td>
+			</tr>
+		</table>
+	</center>
+	
+	<br>
+
+	<img src="q2.png" style="height: 105px">
+
+	<p id="demo">Display the result here.</p>
+	<script>
+		var greeting;
+		// gets hours from the current date
+		var hour = new Date().getHours();
+		// just gets the date
+		var date = new Date();
+		// get the time as a string, without seconds
+		var time = date.toLocaleTimeString([], {timeStyle: 'short'});
+
+		if (hour < 18)
+		{
+			greeting = "°.❀┈┈∘*┈ ☼ ┈*∘┈┈❀.°<br><br>good day";
+//			ʕ ﾟ ● ﾟʔ
+		}
+		else
+		{
+			greeting = "°.✩┈┈∘*┈ ☾ ┈*∘┈┈✩.°<br><br>good evening";
+//			ʕ ꈍᴥꈍʔ
+		}
+
+		document.getElementById("demo").innerHTML = (greeting + ", the time is currently " + time.toLowerCase());
+	</script>
+
+	<br>
+	
+	<img src="q3.png" style="height: 105px">
+	<br>
+	<p><i>the image of Tampa below was originally 3800 × 2533 pixels, but I used Photoshop to automatically resize it to be smaller and further save it for the web</i></p>
+	<div class="mod4-img">
+		<img src="tampa.jpg">
+	</div>
+	<br>
+	<br>
+	<img src="i-circle.png" style="height: 50px">
+	<p>Regarding Adobe Photoshop, I was quite familiar with the application already,<br> so this assignment was not difficult at all to complete. I use it moderately, so finding any<br> necessary tools and options was easy.</p>
+
+	<br>
+	<br>
+	<p>˙ᵕ˙</p>
+	<br>
+	<hr>
+	<br>
+
+</body>
+</html>

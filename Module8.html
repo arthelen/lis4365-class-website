@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<link rel="stylesheet" href="website-style.css" />
+	
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<script>
+		function validateForm()
+		{
+			var n = document.forms["myForm"]["name"].value;
+			var a = document.forms["myForm"]["age"].value;
+			var black = document.getElementById("black");
+			var blue = document.getElementById("blue");
+			var brown = document.getElementById("brown");
+			var gray = document.getElementById("gray");
+			var green = document.getElementById("green");
+			var orange = document.getElementById("orange");
+			var pink = document.getElementById("pink");
+			var purple = document.getElementById("purple");
+			var red = document.getElementById("red");
+			var white = document.getElementById("white");
+			var yellow = document.getElementById("yellow");
+			var othercolor = document.getElementById("othercolor");
+			if (n == "" || n == null)
+			{
+				alert("name must be filled out!");
+				return false;
+			}
+			if (a == "" || a == null)
+			{
+				alert("age must be filled out!");
+				return false;
+			}
+			if (black.checked == false && blue.checked == false && brown.checked == false && gray.checked == false && green.checked == false && orange.checked == false && pink.checked == false && purple.checked == false && red.checked == false && white.checked == false && yellow.checked == false && othercolor.checked == false)
+			{
+				alert("please choose your favorite color!");
+				return false;
+			}
+		}
+	</script>
+</head>
+
+  	<title>module 8</title>
+
+<body>
+
+  	<br>
+  	<hr>
+  	<br>
+
+  	<h1>♡¸.• module 8 •.¸♡ </h1>
+  	<h4>allison thelen</h4>
+
+  	<br>
+	<div class="dropdown">
+	<button>ㅤ<i class="bi bi-house-fill">ㅤ</i></button>
+	  <div class="dropdown-content">
+		  <a href="website-index.html">home</a>
+	  </div>
+	</div>
+	<br>
+	<br>
+	
+
+	<br>
+	<img src="q1.png" style="height: 77px; margin-bottom: -25px">
+	
+	<h3><i>fields with an asterisk (*) are required</i></h3>
+
+	<form name="myForm" action="Module8.php" onsubmit="return validateForm()" method="get">
+		<label for="name">* name:</label><br>
+		<input type="text" id="name" name="name" placeholder="john doe, john d, john"><br><br>
+		<label for="age">* age:</label><br>
+		<input type="text" id="age" name="age" placeholder="25"><br><br>
+		<div id="radio">
+			<label for="color">* quick question, what is your favorite color?</label><br>
+			<input type="radio" id="black" name="color" value="black">
+			<label for="color"> black</label><br>
+			<input type="radio" id="blue" name="color" value="blue">
+			<label for="color"> blue</label><br>
+			<input type="radio" id="brown" name="color" value="brown">
+			<label for="color"> brown</label><br>
+			<input type="radio" id="gray" name="color" value="gray">
+			<label for="color"> gray</label><br>
+			<input type="radio" id="green" name="color" value="green">
+			<label for="color"> green</label><br>
+			<input type="radio" id="orange" name="color" value="orange">
+			<label for="color"> orange</label><br>
+			<input type="radio" id="pink" name="color" value="pink">
+			<label for="color"> pink</label><br>
+			<input type="radio" id="purple" name="color" value="purple">
+			<label for="color"> purple</label><br>
+			<input type="radio" id="red" name="color" value="red">
+			<label for="color"> red</label><br>		
+			<input type="radio" id="white" name="color" value="white">
+			<label for="color"> white</label><br>
+			<input type="radio" id="yellow" name="color" value="yellow">
+			<label for="color"> yellow</label><br>
+			<input type="radio" id="othercolor" name="color" value="othercolor">
+			<label for="color"> other</label><br><br>
+		</div>
+		<label for="comments">comments:</label><br>
+		<input type="text" id="comments" name="comments" placeholder="feel free to leave anything here :)" class="scroll"><br><br><br>
+		<button type="submit" onclick="formSubmit()" value="Submit">submit</button>
+	</form>
+
+	<p>thank you for filling out the form!</p>
+	<br>
+	
+	<hr style="width: 250px">
+
+
+	<br>
+	<br>
+	<p>˙ᵕ˙</p>
+	<br>
+	<hr>
+	<br>
+
+</body>
+</html>

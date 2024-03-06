@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+<head>
+  	<meta charset="utf-8">
+	<title>harvest market order</title>
+  	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="order-form.js">  </script> 
+	<!-- font links -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+  	<!-- bootstrap icons -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+	
+	
+	
+	<br>
+	<br>
+	<br>
+	<img src="title.png" style="height:30%">
+  	<br>
+	<br>
+	
+	<div class="nav-bar">
+		<a href="index.html"><img src="home-button.png" style="height: 70px" alt="home button"></a>
+		<a href="products.html"><img src="products-button.png" style="height: 70px" alt="products button"></a>
+		<a href="order.html"><img src="order-button-clicked.png" style="height: 70px" alt="order button"></a>
+	</div>
+	
+	<img src="order-form.png" style="height:16%">
+
+	<h3><i>fields with an asterisk (*) are required</i></h3>
+	
+	<br>
+
+	<form name="myForm" action="code.php" onsubmit="return validateForm()" method="post">
+	<form name="myForm" action="code.php" onsubmit="return validateForm()" method="post">
+		<label for="name">* name:</label><br>
+		<input type="text" id="name" name="name" placeholder="john doe" onfocusout="checkName()"><br><br>
+		<label for="email">* email</label><br>
+		<input type="text" id="email" name="email" placeholder="johndoe@email.com" onfocusout="checkEmail()"><br><br>
+
+		<table width="50%" id="alignment" >
+		<tr>
+<!--		<th>food item</th>-->
+		<th> </th>
+		<th>quantity</th>
+		<th>price</th>
+		</tr>
+		<tr> 
+<!--		<td>item 1:</td> -->
+		<td>
+		<select id="item1">
+		<option value="1">food item 1</option> 
+		<option value="apple">apple(s)</option> 
+		<option value="banana">banana(s)</option> 
+		<option value="bell-pepper">bell-pepper(s)</option> 
+		<option value="broccoli">broccoli</option> 
+		<option value="carrot">carrot(s)</option>
+		<option value="corn">corn</option>
+		<option value="cucumber">cucumber(s)</option>
+		<option value="eggplant">eggplant(s)</option>
+		<option value="grape">grape(s)</option>
+		<option value="onion">onion(s)</option>
+		<option value="orange">orange(s)</option>
+		<option value="pickle">pickle(s)</option>
+		<option value="potato">potato(es)</option>
+		<option value="radish">radish(es)</option>
+		<option value="spinach">spinach</option>
+		<option value="strawberry">strawberry(ies)</option>
+		<option value="tomato">tomato(es)</option>
+		<option value="turnip">turnip(s)</option>
+		<option value="watermelon">watermelon(s)</option>
+		<option value="zucchini">zucchini</option>
+		</select>
+		</td> 
+		<td><select id="q1">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</select>
+		</td>
+		<td><input type="text" id="p1"></td>
+		</tr>   
+		<tr>
+<!--		<td>item 2:</td>-->
+		<td>
+		<select id="item2">
+		<option value="1">food item 2</option> 
+		<option value="apple">apple(s)</option> 
+		<option value="banana">banana(s)</option> 
+		<option value="bell-pepper">bell-pepper(s)</option> 
+		<option value="broccoli">broccoli</option> 
+		<option value="carrot">carrot(s)</option>
+		<option value="corn">corn</option>
+		<option value="cucumber">cucumber(s)</option>
+		<option value="eggplant">eggplant(s)</option>
+		<option value="grape">grape(s)</option>
+		<option value="onion">onion(s)</option>
+		<option value="orange">orange(s)</option>
+		<option value="pickle">pickle(s)</option>
+		<option value="potato">potato(es)</option>
+		<option value="radish">radish(es)</option>
+		<option value="spinach">spinach</option>
+		<option value="strawberry">strawberry(ies)</option>
+		<option value="tomato">tomato(es)</option>
+		<option value="turnip">turnip(s)</option>
+		<option value="watermelon">watermelon(s)</option>
+		<option value="zucchini">zucchini</option>
+		</select>
+		</td>
+		<td><select id="q2">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</select>
+		</td>
+		<td><input type="text" id="p2"></td>
+		</tr> 
+		<tr>
+<!--		<td>item 3:</td>-->
+		<td><select id="item3">
+		<option value="1">food item 3</option> 
+		<option value="apple">apple(s)</option> 
+		<option value="banana">banana(s)</option> 
+		<option value="bell-pepper">bell-pepper(s)</option> 
+		<option value="broccoli">broccoli</option> 
+		<option value="carrot">carrot(s)</option>
+		<option value="corn">corn</option>
+		<option value="cucumber">cucumber(s)</option>
+		<option value="eggplant">eggplant(s)</option>
+		<option value="grape">grape(s)</option>
+		<option value="onion">onion(s)</option>
+		<option value="orange">orange(s)</option>
+		<option value="pickle">pickle(s)</option>
+		<option value="potato">potato(es)</option>
+		<option value="radish">radish(es)</option>
+		<option value="spinach">spinach</option>
+		<option value="strawberry">strawberry(ies)</option>
+		<option value="tomato">tomato(es)</option>
+		<option value="turnip">turnip(s)</option>
+		<option value="watermelon">watermelon(s)</option>
+		<option value="zucchini">zucchini</option>
+		</select>
+		</td>
+		<td><select id="q3">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</select>
+		</td>
+		<td><input type="text" id="p3"></td>
+		</tr> 
+		<tr>
+<!--		<td>item 4:</td>-->
+		<td><select id="item4">
+		<option value="1">food item 4</option> 
+		<option value="apple">apple(s)</option> 
+		<option value="banana">banana(s)</option> 
+		<option value="bell-pepper">bell-pepper(s)</option> 
+		<option value="broccoli">broccoli</option> 
+		<option value="carrot">carrot(s)</option>
+		<option value="corn">corn</option>
+		<option value="cucumber">cucumber(s)</option>
+		<option value="eggplant">eggplant(s)</option>
+		<option value="grape">grape(s)</option>
+		<option value="onion">onion(s)</option>
+		<option value="orange">orange(s)</option>
+		<option value="pickle">pickle(s)</option>
+		<option value="potato">potato(es)</option>
+		<option value="radish">radish(es)</option>
+		<option value="spinach">spinach</option>
+		<option value="strawberry">strawberry(ies)</option>
+		<option value="tomato">tomato(es)</option>
+		<option value="turnip">turnip(s)</option>
+		<option value="watermelon">watermelon(s)</option>
+		<option value="zucchini">zucchini</option>
+		</select>
+		</td>
+		<td><select id="q4">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</select>
+		</td>
+		<td><input type="text" id="p4"></td>
+		</tr>    
+		<tr>
+<!--		<td></td> -->
+		<td></td> 
+		<td><button type="submit" name="save_select" value="submit" onclick="formSubmit()">submit</td>
+		<td><button type="reset" value="clear">clear</td>
+		</tr>
+		</table>
+	</form>
+	
+	<a href="index.php">link</a>
+	<br>
+	
+	<p>thank you for your order!</p>
+	<br>
+
+</body>
+</html>
